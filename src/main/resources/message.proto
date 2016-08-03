@@ -1,0 +1,94 @@
+// See README.txt for information and build instructions.
+
+//package game.protobuf;
+
+option java_package = "game.protobuf";
+
+option java_outer_classname = "PB";
+//生成文件的大小
+//option optimize_for = CODE_SIZE;
+//是否生成服务
+option java_generic_services = false;
+
+
+
+enum MessageId {
+    //c2s
+    C2S_LOGIN = 1;
+    C2S_REGISTER = 2;
+    C2S_SENDCHAT = 3;
+
+
+    //s2c
+    S2C_LOGIN = 10001;
+    S2C_REVIEVECHAT = 10002;
+
+    //s2d
+    S2D_LOGIN = 20001;
+    S2D_REGISTER = 20002;
+    S2D_UPDATEPLAYER = 20003;
+
+    //d2s
+    D2S_LOGINRESULT = 30001;
+    D2S_REGISTERRESULT = 30002;
+
+}
+
+message player{
+    optional int64 id = 1;
+    optional string name = 2;
+    optional int32 gold = 3;
+    optional int32 diamond = 4;
+    optional int32 level = 5;
+
+}
+
+//req
+message C2SMessage {
+    required MessageId messageId = 1;
+
+    optional C2SLogin login = 2;
+    optional C2SSendChat sendChat = 3;
+    optional C2SRegister register = 4;
+
+}
+
+message C2SLogin {
+    required int64 userId = 1;
+    required string passwd = 2;
+}
+
+message C2SSendChat{
+    optional int32 channel = 1;
+    optional string text = 2;
+}
+
+message C2SRegister{
+    optional string name = 1;
+}
+
+
+
+//resp
+message S2CMessage {
+    required MessageId messageId = 1;
+
+    optional S2CLoginResult loginResult = 2;
+    optional S2CRecieveChat recieveChat = 3;
+    optional Result registerResult = 4;
+
+}
+
+message S2CLoginResult {
+    required bool result = 1;
+}
+
+message S2CRecieveChat{
+    optional int32 channel = 1;
+    optional string text = 2;
+}
+
+message Result{
+    optional bool flag = 1;
+}
+

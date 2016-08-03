@@ -1,0 +1,60 @@
+// See README.txt for information and build instructions.
+
+//package game.protobuf;
+
+option java_package = "game.protobuf";
+
+option java_outer_classname = "DB";
+//生成文件的大小
+//option optimize_for = CODE_SIZE;
+//是否生成服务
+option java_generic_services = false;
+
+
+import "message.proto";
+
+
+
+
+//db
+//req
+message S2DMessage {
+    required MessageId messageId = 1;
+    optional S2DLogin s2dLogin = 2;
+    optional DbPlayer register = 3;
+    optional DbPlayer updatePlayer = 4;
+}
+
+//resp
+message D2SMessage {
+    required MessageId messageId = 1;
+    optional D2SLoginResult loginResult = 2;
+    optional DbPlayer register = 3;
+}
+
+message S2DLogin {
+    required int64 userId = 1;
+
+}
+
+message D2SLoginResult {
+    required bool isHas = 1;
+    optional DbPlayer playerDb = 2;
+
+}
+
+
+message DbPlayer{
+    //基础属性
+    optional int64 userId = 2;
+    optional string name = 3;
+    optional int32 gold = 4;
+    optional int32 diamond = 5;
+    optional int32 level = 6;
+
+    //
+    optional string equip = 100;
+    optional string pet = 101;
+    optional string bag = 102;
+
+}
