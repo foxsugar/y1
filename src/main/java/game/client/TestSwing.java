@@ -1,5 +1,7 @@
 package game.client;
 
+import game.protobuf.DB;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -26,6 +28,9 @@ public class TestSwing extends JFrame{
         this.setTitle("HelloWorld");
 
         new Thread(client).start();
+
+
+
 
     }
 

@@ -31,6 +31,10 @@
     <orderEntry type="library" exported="" name="Gradle: mysql:mysql-connector-java:5.1.36" level="project" />
     <orderEntry type="library" exported="" name="Gradle: commons-dbutils:commons-dbutils:1.6" level="project" />
     <orderEntry type="library" exported="" name="Gradle: io.netty:netty-all:4.0.36.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.apache.httpcomponents:httpclient:4.5.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.apache.httpcomponents:httpcore:4.4.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: commons-codec:commons-codec:1.9" level="project" />
   </component>
   <component name="org.twodividedbyzero.idea.findbugs">
     <option name="_basePreferences">
