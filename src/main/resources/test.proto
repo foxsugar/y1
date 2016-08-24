@@ -1,0 +1,37 @@
+// See README.txt for information and build instructions.
+
+//package game.protobuf;
+
+//syntax = "proto2";
+option java_package = "test";//包名
+
+option java_outer_classname = "Test";//外部类名
+//生成文件的大小
+//option optimize_for = CODE_SIZE;//可以选择生成的文件大小
+//是否生成服务
+option java_generic_services = false;
+
+
+
+enum MessageId{
+    Login = 1;
+    loginout = 2;
+}
+message User{
+    required MessageId id = 1;//required表示必须有的字段
+    optional string name = 2;//optional表示可选字段
+    repeated int32 array = 3;//相当于一个int类型list
+    repeated Tel tel = 4;//repeated表示可重复,也就是list,3.0版本支持map
+    optional bool isTrue = 5;//布尔型
+    optional float f = 6;//浮点型
+}
+
+message Tel{
+    optional string num = 1;
+
+}
+
+
+
+
+

@@ -60,6 +60,7 @@ import java.io.IOException;
     private void send2DbUpdate(){
 
         DB.S2DMessage.Builder s2d = DB.S2DMessage.newBuilder();
+
         try {
             s2d.setUpdatePlayer(getDbPlayer(this));
             s2d.setMessageId(PB.MessageId.S2D_UPDATEPLAYER);

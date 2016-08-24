@@ -28,11 +28,11 @@ public final class DB {
     /**
      * <code>optional .S2DLogin s2dLogin = 2;</code>
      */
-    S2DLogin getS2DLogin();
+    game.protobuf.DB.S2DLogin getS2DLogin();
     /**
      * <code>optional .S2DLogin s2dLogin = 2;</code>
      */
-    S2DLoginOrBuilder getS2DLoginOrBuilder();
+    game.protobuf.DB.S2DLoginOrBuilder getS2DLoginOrBuilder();
 
     /**
      * <code>optional .DbPlayer register = 3;</code>
@@ -41,11 +41,11 @@ public final class DB {
     /**
      * <code>optional .DbPlayer register = 3;</code>
      */
-    DbPlayer getRegister();
+    game.protobuf.DB.DbPlayer getRegister();
     /**
      * <code>optional .DbPlayer register = 3;</code>
      */
-    DbPlayerOrBuilder getRegisterOrBuilder();
+    game.protobuf.DB.DbPlayerOrBuilder getRegisterOrBuilder();
 
     /**
      * <code>optional .DbPlayer updatePlayer = 4;</code>
@@ -54,11 +54,11 @@ public final class DB {
     /**
      * <code>optional .DbPlayer updatePlayer = 4;</code>
      */
-    DbPlayer getUpdatePlayer();
+    game.protobuf.DB.DbPlayer getUpdatePlayer();
     /**
      * <code>optional .DbPlayer updatePlayer = 4;</code>
      */
-    DbPlayerOrBuilder getUpdatePlayerOrBuilder();
+    game.protobuf.DB.DbPlayerOrBuilder getUpdatePlayerOrBuilder();
   }
   /**
    * Protobuf type {@code S2DMessage}
@@ -89,7 +89,7 @@ public final class DB {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -129,11 +129,11 @@ public final class DB {
               break;
             }
             case 18: {
-              S2DLogin.Builder subBuilder = null;
+              game.protobuf.DB.S2DLogin.Builder subBuilder = null;
               if (((bitField0_ & 0x00000002) == 0x00000002)) {
                 subBuilder = s2DLogin_.toBuilder();
               }
-              s2DLogin_ = input.readMessage(S2DLogin.PARSER, extensionRegistry);
+              s2DLogin_ = input.readMessage(game.protobuf.DB.S2DLogin.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(s2DLogin_);
                 s2DLogin_ = subBuilder.buildPartial();
@@ -142,11 +142,11 @@ public final class DB {
               break;
             }
             case 26: {
-              DbPlayer.Builder subBuilder = null;
+              game.protobuf.DB.DbPlayer.Builder subBuilder = null;
               if (((bitField0_ & 0x00000004) == 0x00000004)) {
                 subBuilder = register_.toBuilder();
               }
-              register_ = input.readMessage(DbPlayer.PARSER, extensionRegistry);
+              register_ = input.readMessage(game.protobuf.DB.DbPlayer.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(register_);
                 register_ = subBuilder.buildPartial();
@@ -155,11 +155,11 @@ public final class DB {
               break;
             }
             case 34: {
-              DbPlayer.Builder subBuilder = null;
+              game.protobuf.DB.DbPlayer.Builder subBuilder = null;
               if (((bitField0_ & 0x00000008) == 0x00000008)) {
                 subBuilder = updatePlayer_.toBuilder();
               }
-              updatePlayer_ = input.readMessage(DbPlayer.PARSER, extensionRegistry);
+              updatePlayer_ = input.readMessage(game.protobuf.DB.DbPlayer.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(updatePlayer_);
                 updatePlayer_ = subBuilder.buildPartial();
@@ -181,14 +181,14 @@ public final class DB {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return DB.internal_static_S2DMessage_descriptor;
+      return game.protobuf.DB.internal_static_S2DMessage_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return DB.internal_static_S2DMessage_fieldAccessorTable
+      return game.protobuf.DB.internal_static_S2DMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              S2DMessage.class, Builder.class);
+              game.protobuf.DB.S2DMessage.class, game.protobuf.DB.S2DMessage.Builder.class);
     }
 
     public static com.google.protobuf.Parser<S2DMessage> PARSER =
@@ -201,7 +201,7 @@ public final class DB {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<S2DMessage> getParserForType() {
       return PARSER;
     }
@@ -223,7 +223,7 @@ public final class DB {
     }
 
     public static final int S2DLOGIN_FIELD_NUMBER = 2;
-    private S2DLogin s2DLogin_;
+    private game.protobuf.DB.S2DLogin s2DLogin_;
     /**
      * <code>optional .S2DLogin s2dLogin = 2;</code>
      */
@@ -233,18 +233,18 @@ public final class DB {
     /**
      * <code>optional .S2DLogin s2dLogin = 2;</code>
      */
-    public S2DLogin getS2DLogin() {
+    public game.protobuf.DB.S2DLogin getS2DLogin() {
       return s2DLogin_;
     }
     /**
      * <code>optional .S2DLogin s2dLogin = 2;</code>
      */
-    public S2DLoginOrBuilder getS2DLoginOrBuilder() {
+    public game.protobuf.DB.S2DLoginOrBuilder getS2DLoginOrBuilder() {
       return s2DLogin_;
     }
 
     public static final int REGISTER_FIELD_NUMBER = 3;
-    private DbPlayer register_;
+    private game.protobuf.DB.DbPlayer register_;
     /**
      * <code>optional .DbPlayer register = 3;</code>
      */
@@ -254,18 +254,18 @@ public final class DB {
     /**
      * <code>optional .DbPlayer register = 3;</code>
      */
-    public DbPlayer getRegister() {
+    public game.protobuf.DB.DbPlayer getRegister() {
       return register_;
     }
     /**
      * <code>optional .DbPlayer register = 3;</code>
      */
-    public DbPlayerOrBuilder getRegisterOrBuilder() {
+    public game.protobuf.DB.DbPlayerOrBuilder getRegisterOrBuilder() {
       return register_;
     }
 
     public static final int UPDATEPLAYER_FIELD_NUMBER = 4;
-    private DbPlayer updatePlayer_;
+    private game.protobuf.DB.DbPlayer updatePlayer_;
     /**
      * <code>optional .DbPlayer updatePlayer = 4;</code>
      */
@@ -275,21 +275,21 @@ public final class DB {
     /**
      * <code>optional .DbPlayer updatePlayer = 4;</code>
      */
-    public DbPlayer getUpdatePlayer() {
+    public game.protobuf.DB.DbPlayer getUpdatePlayer() {
       return updatePlayer_;
     }
     /**
      * <code>optional .DbPlayer updatePlayer = 4;</code>
      */
-    public DbPlayerOrBuilder getUpdatePlayerOrBuilder() {
+    public game.protobuf.DB.DbPlayerOrBuilder getUpdatePlayerOrBuilder() {
       return updatePlayer_;
     }
 
     private void initFields() {
       messageId_ = game.protobuf.PB.MessageId.C2S_LOGIN;
-      s2DLogin_ = S2DLogin.getDefaultInstance();
-      register_ = DbPlayer.getDefaultInstance();
-      updatePlayer_ = DbPlayer.getDefaultInstance();
+      s2DLogin_ = game.protobuf.DB.S2DLogin.getDefaultInstance();
+      register_ = game.protobuf.DB.DbPlayer.getDefaultInstance();
+      updatePlayer_ = game.protobuf.DB.DbPlayer.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -357,59 +357,59 @@ public final class DB {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static S2DMessage parseFrom(
+    public static game.protobuf.DB.S2DMessage parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static S2DMessage parseFrom(
+    public static game.protobuf.DB.S2DMessage parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static S2DMessage parseFrom(byte[] data)
+    public static game.protobuf.DB.S2DMessage parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static S2DMessage parseFrom(
+    public static game.protobuf.DB.S2DMessage parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static S2DMessage parseFrom(java.io.InputStream input)
+    public static game.protobuf.DB.S2DMessage parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static S2DMessage parseFrom(
+    public static game.protobuf.DB.S2DMessage parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static S2DMessage parseDelimitedFrom(java.io.InputStream input)
+    public static game.protobuf.DB.S2DMessage parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static S2DMessage parseDelimitedFrom(
+    public static game.protobuf.DB.S2DMessage parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static S2DMessage parseFrom(
+    public static game.protobuf.DB.S2DMessage parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static S2DMessage parseFrom(
+    public static game.protobuf.DB.S2DMessage parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -418,12 +418,12 @@ public final class DB {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(S2DMessage prototype) {
+    public static Builder newBuilder(game.protobuf.DB.S2DMessage prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -440,17 +440,17 @@ public final class DB {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:S2DMessage)
-        S2DMessageOrBuilder {
+        game.protobuf.DB.S2DMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return DB.internal_static_S2DMessage_descriptor;
+        return game.protobuf.DB.internal_static_S2DMessage_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return DB.internal_static_S2DMessage_fieldAccessorTable
+        return game.protobuf.DB.internal_static_S2DMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                S2DMessage.class, Builder.class);
+                game.protobuf.DB.S2DMessage.class, game.protobuf.DB.S2DMessage.Builder.class);
       }
 
       // Construct using game.protobuf.DB.S2DMessage.newBuilder()
@@ -479,19 +479,19 @@ public final class DB {
         messageId_ = game.protobuf.PB.MessageId.C2S_LOGIN;
         bitField0_ = (bitField0_ & ~0x00000001);
         if (s2DLoginBuilder_ == null) {
-          s2DLogin_ = S2DLogin.getDefaultInstance();
+          s2DLogin_ = game.protobuf.DB.S2DLogin.getDefaultInstance();
         } else {
           s2DLoginBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000002);
         if (registerBuilder_ == null) {
-          register_ = DbPlayer.getDefaultInstance();
+          register_ = game.protobuf.DB.DbPlayer.getDefaultInstance();
         } else {
           registerBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000004);
         if (updatePlayerBuilder_ == null) {
-          updatePlayer_ = DbPlayer.getDefaultInstance();
+          updatePlayer_ = game.protobuf.DB.DbPlayer.getDefaultInstance();
         } else {
           updatePlayerBuilder_.clear();
         }
@@ -505,23 +505,23 @@ public final class DB {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return DB.internal_static_S2DMessage_descriptor;
+        return game.protobuf.DB.internal_static_S2DMessage_descriptor;
       }
 
-      public S2DMessage getDefaultInstanceForType() {
-        return S2DMessage.getDefaultInstance();
+      public game.protobuf.DB.S2DMessage getDefaultInstanceForType() {
+        return game.protobuf.DB.S2DMessage.getDefaultInstance();
       }
 
-      public S2DMessage build() {
-        S2DMessage result = buildPartial();
+      public game.protobuf.DB.S2DMessage build() {
+        game.protobuf.DB.S2DMessage result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public S2DMessage buildPartial() {
-        S2DMessage result = new S2DMessage(this);
+      public game.protobuf.DB.S2DMessage buildPartial() {
+        game.protobuf.DB.S2DMessage result = new game.protobuf.DB.S2DMessage(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -558,16 +558,16 @@ public final class DB {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof S2DMessage) {
-          return mergeFrom((S2DMessage)other);
+        if (other instanceof game.protobuf.DB.S2DMessage) {
+          return mergeFrom((game.protobuf.DB.S2DMessage)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(S2DMessage other) {
-        if (other == S2DMessage.getDefaultInstance()) return this;
+      public Builder mergeFrom(game.protobuf.DB.S2DMessage other) {
+        if (other == game.protobuf.DB.S2DMessage.getDefaultInstance()) return this;
         if (other.hasMessageId()) {
           setMessageId(other.getMessageId());
         }
@@ -602,11 +602,11 @@ public final class DB {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        S2DMessage parsedMessage = null;
+        game.protobuf.DB.S2DMessage parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (S2DMessage) e.getUnfinishedMessage();
+          parsedMessage = (game.protobuf.DB.S2DMessage) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -652,9 +652,9 @@ public final class DB {
         return this;
       }
 
-      private S2DLogin s2DLogin_ = S2DLogin.getDefaultInstance();
+      private game.protobuf.DB.S2DLogin s2DLogin_ = game.protobuf.DB.S2DLogin.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          S2DLogin, S2DLogin.Builder, S2DLoginOrBuilder> s2DLoginBuilder_;
+          game.protobuf.DB.S2DLogin, game.protobuf.DB.S2DLogin.Builder, game.protobuf.DB.S2DLoginOrBuilder> s2DLoginBuilder_;
       /**
        * <code>optional .S2DLogin s2dLogin = 2;</code>
        */
@@ -664,7 +664,7 @@ public final class DB {
       /**
        * <code>optional .S2DLogin s2dLogin = 2;</code>
        */
-      public S2DLogin getS2DLogin() {
+      public game.protobuf.DB.S2DLogin getS2DLogin() {
         if (s2DLoginBuilder_ == null) {
           return s2DLogin_;
         } else {
@@ -674,7 +674,7 @@ public final class DB {
       /**
        * <code>optional .S2DLogin s2dLogin = 2;</code>
        */
-      public Builder setS2DLogin(S2DLogin value) {
+      public Builder setS2DLogin(game.protobuf.DB.S2DLogin value) {
         if (s2DLoginBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -691,7 +691,7 @@ public final class DB {
        * <code>optional .S2DLogin s2dLogin = 2;</code>
        */
       public Builder setS2DLogin(
-          S2DLogin.Builder builderForValue) {
+          game.protobuf.DB.S2DLogin.Builder builderForValue) {
         if (s2DLoginBuilder_ == null) {
           s2DLogin_ = builderForValue.build();
           onChanged();
@@ -704,12 +704,12 @@ public final class DB {
       /**
        * <code>optional .S2DLogin s2dLogin = 2;</code>
        */
-      public Builder mergeS2DLogin(S2DLogin value) {
+      public Builder mergeS2DLogin(game.protobuf.DB.S2DLogin value) {
         if (s2DLoginBuilder_ == null) {
           if (((bitField0_ & 0x00000002) == 0x00000002) &&
-              s2DLogin_ != S2DLogin.getDefaultInstance()) {
+              s2DLogin_ != game.protobuf.DB.S2DLogin.getDefaultInstance()) {
             s2DLogin_ =
-              S2DLogin.newBuilder(s2DLogin_).mergeFrom(value).buildPartial();
+              game.protobuf.DB.S2DLogin.newBuilder(s2DLogin_).mergeFrom(value).buildPartial();
           } else {
             s2DLogin_ = value;
           }
@@ -725,7 +725,7 @@ public final class DB {
        */
       public Builder clearS2DLogin() {
         if (s2DLoginBuilder_ == null) {
-          s2DLogin_ = S2DLogin.getDefaultInstance();
+          s2DLogin_ = game.protobuf.DB.S2DLogin.getDefaultInstance();
           onChanged();
         } else {
           s2DLoginBuilder_.clear();
@@ -736,7 +736,7 @@ public final class DB {
       /**
        * <code>optional .S2DLogin s2dLogin = 2;</code>
        */
-      public S2DLogin.Builder getS2DLoginBuilder() {
+      public game.protobuf.DB.S2DLogin.Builder getS2DLoginBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getS2DLoginFieldBuilder().getBuilder();
@@ -744,7 +744,7 @@ public final class DB {
       /**
        * <code>optional .S2DLogin s2dLogin = 2;</code>
        */
-      public S2DLoginOrBuilder getS2DLoginOrBuilder() {
+      public game.protobuf.DB.S2DLoginOrBuilder getS2DLoginOrBuilder() {
         if (s2DLoginBuilder_ != null) {
           return s2DLoginBuilder_.getMessageOrBuilder();
         } else {
@@ -755,11 +755,11 @@ public final class DB {
        * <code>optional .S2DLogin s2dLogin = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          S2DLogin, S2DLogin.Builder, S2DLoginOrBuilder>
+          game.protobuf.DB.S2DLogin, game.protobuf.DB.S2DLogin.Builder, game.protobuf.DB.S2DLoginOrBuilder> 
           getS2DLoginFieldBuilder() {
         if (s2DLoginBuilder_ == null) {
           s2DLoginBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              S2DLogin, S2DLogin.Builder, S2DLoginOrBuilder>(
+              game.protobuf.DB.S2DLogin, game.protobuf.DB.S2DLogin.Builder, game.protobuf.DB.S2DLoginOrBuilder>(
                   getS2DLogin(),
                   getParentForChildren(),
                   isClean());
@@ -768,9 +768,9 @@ public final class DB {
         return s2DLoginBuilder_;
       }
 
-      private DbPlayer register_ = DbPlayer.getDefaultInstance();
+      private game.protobuf.DB.DbPlayer register_ = game.protobuf.DB.DbPlayer.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          DbPlayer, DbPlayer.Builder, DbPlayerOrBuilder> registerBuilder_;
+          game.protobuf.DB.DbPlayer, game.protobuf.DB.DbPlayer.Builder, game.protobuf.DB.DbPlayerOrBuilder> registerBuilder_;
       /**
        * <code>optional .DbPlayer register = 3;</code>
        */
@@ -780,7 +780,7 @@ public final class DB {
       /**
        * <code>optional .DbPlayer register = 3;</code>
        */
-      public DbPlayer getRegister() {
+      public game.protobuf.DB.DbPlayer getRegister() {
         if (registerBuilder_ == null) {
           return register_;
         } else {
@@ -790,7 +790,7 @@ public final class DB {
       /**
        * <code>optional .DbPlayer register = 3;</code>
        */
-      public Builder setRegister(DbPlayer value) {
+      public Builder setRegister(game.protobuf.DB.DbPlayer value) {
         if (registerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -807,7 +807,7 @@ public final class DB {
        * <code>optional .DbPlayer register = 3;</code>
        */
       public Builder setRegister(
-          DbPlayer.Builder builderForValue) {
+          game.protobuf.DB.DbPlayer.Builder builderForValue) {
         if (registerBuilder_ == null) {
           register_ = builderForValue.build();
           onChanged();
@@ -820,12 +820,12 @@ public final class DB {
       /**
        * <code>optional .DbPlayer register = 3;</code>
        */
-      public Builder mergeRegister(DbPlayer value) {
+      public Builder mergeRegister(game.protobuf.DB.DbPlayer value) {
         if (registerBuilder_ == null) {
           if (((bitField0_ & 0x00000004) == 0x00000004) &&
-              register_ != DbPlayer.getDefaultInstance()) {
+              register_ != game.protobuf.DB.DbPlayer.getDefaultInstance()) {
             register_ =
-              DbPlayer.newBuilder(register_).mergeFrom(value).buildPartial();
+              game.protobuf.DB.DbPlayer.newBuilder(register_).mergeFrom(value).buildPartial();
           } else {
             register_ = value;
           }
@@ -841,7 +841,7 @@ public final class DB {
        */
       public Builder clearRegister() {
         if (registerBuilder_ == null) {
-          register_ = DbPlayer.getDefaultInstance();
+          register_ = game.protobuf.DB.DbPlayer.getDefaultInstance();
           onChanged();
         } else {
           registerBuilder_.clear();
@@ -852,7 +852,7 @@ public final class DB {
       /**
        * <code>optional .DbPlayer register = 3;</code>
        */
-      public DbPlayer.Builder getRegisterBuilder() {
+      public game.protobuf.DB.DbPlayer.Builder getRegisterBuilder() {
         bitField0_ |= 0x00000004;
         onChanged();
         return getRegisterFieldBuilder().getBuilder();
@@ -860,7 +860,7 @@ public final class DB {
       /**
        * <code>optional .DbPlayer register = 3;</code>
        */
-      public DbPlayerOrBuilder getRegisterOrBuilder() {
+      public game.protobuf.DB.DbPlayerOrBuilder getRegisterOrBuilder() {
         if (registerBuilder_ != null) {
           return registerBuilder_.getMessageOrBuilder();
         } else {
@@ -871,11 +871,11 @@ public final class DB {
        * <code>optional .DbPlayer register = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          DbPlayer, DbPlayer.Builder, DbPlayerOrBuilder>
+          game.protobuf.DB.DbPlayer, game.protobuf.DB.DbPlayer.Builder, game.protobuf.DB.DbPlayerOrBuilder> 
           getRegisterFieldBuilder() {
         if (registerBuilder_ == null) {
           registerBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              DbPlayer, DbPlayer.Builder, DbPlayerOrBuilder>(
+              game.protobuf.DB.DbPlayer, game.protobuf.DB.DbPlayer.Builder, game.protobuf.DB.DbPlayerOrBuilder>(
                   getRegister(),
                   getParentForChildren(),
                   isClean());
@@ -884,9 +884,9 @@ public final class DB {
         return registerBuilder_;
       }
 
-      private DbPlayer updatePlayer_ = DbPlayer.getDefaultInstance();
+      private game.protobuf.DB.DbPlayer updatePlayer_ = game.protobuf.DB.DbPlayer.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          DbPlayer, DbPlayer.Builder, DbPlayerOrBuilder> updatePlayerBuilder_;
+          game.protobuf.DB.DbPlayer, game.protobuf.DB.DbPlayer.Builder, game.protobuf.DB.DbPlayerOrBuilder> updatePlayerBuilder_;
       /**
        * <code>optional .DbPlayer updatePlayer = 4;</code>
        */
@@ -896,7 +896,7 @@ public final class DB {
       /**
        * <code>optional .DbPlayer updatePlayer = 4;</code>
        */
-      public DbPlayer getUpdatePlayer() {
+      public game.protobuf.DB.DbPlayer getUpdatePlayer() {
         if (updatePlayerBuilder_ == null) {
           return updatePlayer_;
         } else {
@@ -906,7 +906,7 @@ public final class DB {
       /**
        * <code>optional .DbPlayer updatePlayer = 4;</code>
        */
-      public Builder setUpdatePlayer(DbPlayer value) {
+      public Builder setUpdatePlayer(game.protobuf.DB.DbPlayer value) {
         if (updatePlayerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -923,7 +923,7 @@ public final class DB {
        * <code>optional .DbPlayer updatePlayer = 4;</code>
        */
       public Builder setUpdatePlayer(
-          DbPlayer.Builder builderForValue) {
+          game.protobuf.DB.DbPlayer.Builder builderForValue) {
         if (updatePlayerBuilder_ == null) {
           updatePlayer_ = builderForValue.build();
           onChanged();
@@ -936,12 +936,12 @@ public final class DB {
       /**
        * <code>optional .DbPlayer updatePlayer = 4;</code>
        */
-      public Builder mergeUpdatePlayer(DbPlayer value) {
+      public Builder mergeUpdatePlayer(game.protobuf.DB.DbPlayer value) {
         if (updatePlayerBuilder_ == null) {
           if (((bitField0_ & 0x00000008) == 0x00000008) &&
-              updatePlayer_ != DbPlayer.getDefaultInstance()) {
+              updatePlayer_ != game.protobuf.DB.DbPlayer.getDefaultInstance()) {
             updatePlayer_ =
-              DbPlayer.newBuilder(updatePlayer_).mergeFrom(value).buildPartial();
+              game.protobuf.DB.DbPlayer.newBuilder(updatePlayer_).mergeFrom(value).buildPartial();
           } else {
             updatePlayer_ = value;
           }
@@ -957,7 +957,7 @@ public final class DB {
        */
       public Builder clearUpdatePlayer() {
         if (updatePlayerBuilder_ == null) {
-          updatePlayer_ = DbPlayer.getDefaultInstance();
+          updatePlayer_ = game.protobuf.DB.DbPlayer.getDefaultInstance();
           onChanged();
         } else {
           updatePlayerBuilder_.clear();
@@ -968,7 +968,7 @@ public final class DB {
       /**
        * <code>optional .DbPlayer updatePlayer = 4;</code>
        */
-      public DbPlayer.Builder getUpdatePlayerBuilder() {
+      public game.protobuf.DB.DbPlayer.Builder getUpdatePlayerBuilder() {
         bitField0_ |= 0x00000008;
         onChanged();
         return getUpdatePlayerFieldBuilder().getBuilder();
@@ -976,7 +976,7 @@ public final class DB {
       /**
        * <code>optional .DbPlayer updatePlayer = 4;</code>
        */
-      public DbPlayerOrBuilder getUpdatePlayerOrBuilder() {
+      public game.protobuf.DB.DbPlayerOrBuilder getUpdatePlayerOrBuilder() {
         if (updatePlayerBuilder_ != null) {
           return updatePlayerBuilder_.getMessageOrBuilder();
         } else {
@@ -987,11 +987,11 @@ public final class DB {
        * <code>optional .DbPlayer updatePlayer = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          DbPlayer, DbPlayer.Builder, DbPlayerOrBuilder>
+          game.protobuf.DB.DbPlayer, game.protobuf.DB.DbPlayer.Builder, game.protobuf.DB.DbPlayerOrBuilder> 
           getUpdatePlayerFieldBuilder() {
         if (updatePlayerBuilder_ == null) {
           updatePlayerBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              DbPlayer, DbPlayer.Builder, DbPlayerOrBuilder>(
+              game.protobuf.DB.DbPlayer, game.protobuf.DB.DbPlayer.Builder, game.protobuf.DB.DbPlayerOrBuilder>(
                   getUpdatePlayer(),
                   getParentForChildren(),
                   isClean());
@@ -1031,11 +1031,11 @@ public final class DB {
     /**
      * <code>optional .D2SLoginResult loginResult = 2;</code>
      */
-    D2SLoginResult getLoginResult();
+    game.protobuf.DB.D2SLoginResult getLoginResult();
     /**
      * <code>optional .D2SLoginResult loginResult = 2;</code>
      */
-    D2SLoginResultOrBuilder getLoginResultOrBuilder();
+    game.protobuf.DB.D2SLoginResultOrBuilder getLoginResultOrBuilder();
 
     /**
      * <code>optional .DbPlayer register = 3;</code>
@@ -1044,11 +1044,11 @@ public final class DB {
     /**
      * <code>optional .DbPlayer register = 3;</code>
      */
-    DbPlayer getRegister();
+    game.protobuf.DB.DbPlayer getRegister();
     /**
      * <code>optional .DbPlayer register = 3;</code>
      */
-    DbPlayerOrBuilder getRegisterOrBuilder();
+    game.protobuf.DB.DbPlayerOrBuilder getRegisterOrBuilder();
   }
   /**
    * Protobuf type {@code D2SMessage}
@@ -1078,7 +1078,7 @@ public final class DB {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -1118,11 +1118,11 @@ public final class DB {
               break;
             }
             case 18: {
-              D2SLoginResult.Builder subBuilder = null;
+              game.protobuf.DB.D2SLoginResult.Builder subBuilder = null;
               if (((bitField0_ & 0x00000002) == 0x00000002)) {
                 subBuilder = loginResult_.toBuilder();
               }
-              loginResult_ = input.readMessage(D2SLoginResult.PARSER, extensionRegistry);
+              loginResult_ = input.readMessage(game.protobuf.DB.D2SLoginResult.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(loginResult_);
                 loginResult_ = subBuilder.buildPartial();
@@ -1131,11 +1131,11 @@ public final class DB {
               break;
             }
             case 26: {
-              DbPlayer.Builder subBuilder = null;
+              game.protobuf.DB.DbPlayer.Builder subBuilder = null;
               if (((bitField0_ & 0x00000004) == 0x00000004)) {
                 subBuilder = register_.toBuilder();
               }
-              register_ = input.readMessage(DbPlayer.PARSER, extensionRegistry);
+              register_ = input.readMessage(game.protobuf.DB.DbPlayer.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(register_);
                 register_ = subBuilder.buildPartial();
@@ -1157,14 +1157,14 @@ public final class DB {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return DB.internal_static_D2SMessage_descriptor;
+      return game.protobuf.DB.internal_static_D2SMessage_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return DB.internal_static_D2SMessage_fieldAccessorTable
+      return game.protobuf.DB.internal_static_D2SMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              D2SMessage.class, Builder.class);
+              game.protobuf.DB.D2SMessage.class, game.protobuf.DB.D2SMessage.Builder.class);
     }
 
     public static com.google.protobuf.Parser<D2SMessage> PARSER =
@@ -1177,7 +1177,7 @@ public final class DB {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<D2SMessage> getParserForType() {
       return PARSER;
     }
@@ -1199,7 +1199,7 @@ public final class DB {
     }
 
     public static final int LOGINRESULT_FIELD_NUMBER = 2;
-    private D2SLoginResult loginResult_;
+    private game.protobuf.DB.D2SLoginResult loginResult_;
     /**
      * <code>optional .D2SLoginResult loginResult = 2;</code>
      */
@@ -1209,18 +1209,18 @@ public final class DB {
     /**
      * <code>optional .D2SLoginResult loginResult = 2;</code>
      */
-    public D2SLoginResult getLoginResult() {
+    public game.protobuf.DB.D2SLoginResult getLoginResult() {
       return loginResult_;
     }
     /**
      * <code>optional .D2SLoginResult loginResult = 2;</code>
      */
-    public D2SLoginResultOrBuilder getLoginResultOrBuilder() {
+    public game.protobuf.DB.D2SLoginResultOrBuilder getLoginResultOrBuilder() {
       return loginResult_;
     }
 
     public static final int REGISTER_FIELD_NUMBER = 3;
-    private DbPlayer register_;
+    private game.protobuf.DB.DbPlayer register_;
     /**
      * <code>optional .DbPlayer register = 3;</code>
      */
@@ -1230,20 +1230,20 @@ public final class DB {
     /**
      * <code>optional .DbPlayer register = 3;</code>
      */
-    public DbPlayer getRegister() {
+    public game.protobuf.DB.DbPlayer getRegister() {
       return register_;
     }
     /**
      * <code>optional .DbPlayer register = 3;</code>
      */
-    public DbPlayerOrBuilder getRegisterOrBuilder() {
+    public game.protobuf.DB.DbPlayerOrBuilder getRegisterOrBuilder() {
       return register_;
     }
 
     private void initFields() {
       messageId_ = game.protobuf.PB.MessageId.C2S_LOGIN;
-      loginResult_ = D2SLoginResult.getDefaultInstance();
-      register_ = DbPlayer.getDefaultInstance();
+      loginResult_ = game.protobuf.DB.D2SLoginResult.getDefaultInstance();
+      register_ = game.protobuf.DB.DbPlayer.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -1304,59 +1304,59 @@ public final class DB {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static D2SMessage parseFrom(
+    public static game.protobuf.DB.D2SMessage parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static D2SMessage parseFrom(
+    public static game.protobuf.DB.D2SMessage parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static D2SMessage parseFrom(byte[] data)
+    public static game.protobuf.DB.D2SMessage parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static D2SMessage parseFrom(
+    public static game.protobuf.DB.D2SMessage parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static D2SMessage parseFrom(java.io.InputStream input)
+    public static game.protobuf.DB.D2SMessage parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static D2SMessage parseFrom(
+    public static game.protobuf.DB.D2SMessage parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static D2SMessage parseDelimitedFrom(java.io.InputStream input)
+    public static game.protobuf.DB.D2SMessage parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static D2SMessage parseDelimitedFrom(
+    public static game.protobuf.DB.D2SMessage parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static D2SMessage parseFrom(
+    public static game.protobuf.DB.D2SMessage parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static D2SMessage parseFrom(
+    public static game.protobuf.DB.D2SMessage parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1365,12 +1365,12 @@ public final class DB {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(D2SMessage prototype) {
+    public static Builder newBuilder(game.protobuf.DB.D2SMessage prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -1386,17 +1386,17 @@ public final class DB {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:D2SMessage)
-        D2SMessageOrBuilder {
+        game.protobuf.DB.D2SMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return DB.internal_static_D2SMessage_descriptor;
+        return game.protobuf.DB.internal_static_D2SMessage_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return DB.internal_static_D2SMessage_fieldAccessorTable
+        return game.protobuf.DB.internal_static_D2SMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                D2SMessage.class, Builder.class);
+                game.protobuf.DB.D2SMessage.class, game.protobuf.DB.D2SMessage.Builder.class);
       }
 
       // Construct using game.protobuf.DB.D2SMessage.newBuilder()
@@ -1424,13 +1424,13 @@ public final class DB {
         messageId_ = game.protobuf.PB.MessageId.C2S_LOGIN;
         bitField0_ = (bitField0_ & ~0x00000001);
         if (loginResultBuilder_ == null) {
-          loginResult_ = D2SLoginResult.getDefaultInstance();
+          loginResult_ = game.protobuf.DB.D2SLoginResult.getDefaultInstance();
         } else {
           loginResultBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000002);
         if (registerBuilder_ == null) {
-          register_ = DbPlayer.getDefaultInstance();
+          register_ = game.protobuf.DB.DbPlayer.getDefaultInstance();
         } else {
           registerBuilder_.clear();
         }
@@ -1444,23 +1444,23 @@ public final class DB {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return DB.internal_static_D2SMessage_descriptor;
+        return game.protobuf.DB.internal_static_D2SMessage_descriptor;
       }
 
-      public D2SMessage getDefaultInstanceForType() {
-        return D2SMessage.getDefaultInstance();
+      public game.protobuf.DB.D2SMessage getDefaultInstanceForType() {
+        return game.protobuf.DB.D2SMessage.getDefaultInstance();
       }
 
-      public D2SMessage build() {
-        D2SMessage result = buildPartial();
+      public game.protobuf.DB.D2SMessage build() {
+        game.protobuf.DB.D2SMessage result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public D2SMessage buildPartial() {
-        D2SMessage result = new D2SMessage(this);
+      public game.protobuf.DB.D2SMessage buildPartial() {
+        game.protobuf.DB.D2SMessage result = new game.protobuf.DB.D2SMessage(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1489,16 +1489,16 @@ public final class DB {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof D2SMessage) {
-          return mergeFrom((D2SMessage)other);
+        if (other instanceof game.protobuf.DB.D2SMessage) {
+          return mergeFrom((game.protobuf.DB.D2SMessage)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(D2SMessage other) {
-        if (other == D2SMessage.getDefaultInstance()) return this;
+      public Builder mergeFrom(game.protobuf.DB.D2SMessage other) {
+        if (other == game.protobuf.DB.D2SMessage.getDefaultInstance()) return this;
         if (other.hasMessageId()) {
           setMessageId(other.getMessageId());
         }
@@ -1530,11 +1530,11 @@ public final class DB {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        D2SMessage parsedMessage = null;
+        game.protobuf.DB.D2SMessage parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (D2SMessage) e.getUnfinishedMessage();
+          parsedMessage = (game.protobuf.DB.D2SMessage) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -1580,9 +1580,9 @@ public final class DB {
         return this;
       }
 
-      private D2SLoginResult loginResult_ = D2SLoginResult.getDefaultInstance();
+      private game.protobuf.DB.D2SLoginResult loginResult_ = game.protobuf.DB.D2SLoginResult.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          D2SLoginResult, D2SLoginResult.Builder, D2SLoginResultOrBuilder> loginResultBuilder_;
+          game.protobuf.DB.D2SLoginResult, game.protobuf.DB.D2SLoginResult.Builder, game.protobuf.DB.D2SLoginResultOrBuilder> loginResultBuilder_;
       /**
        * <code>optional .D2SLoginResult loginResult = 2;</code>
        */
@@ -1592,7 +1592,7 @@ public final class DB {
       /**
        * <code>optional .D2SLoginResult loginResult = 2;</code>
        */
-      public D2SLoginResult getLoginResult() {
+      public game.protobuf.DB.D2SLoginResult getLoginResult() {
         if (loginResultBuilder_ == null) {
           return loginResult_;
         } else {
@@ -1602,7 +1602,7 @@ public final class DB {
       /**
        * <code>optional .D2SLoginResult loginResult = 2;</code>
        */
-      public Builder setLoginResult(D2SLoginResult value) {
+      public Builder setLoginResult(game.protobuf.DB.D2SLoginResult value) {
         if (loginResultBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1619,7 +1619,7 @@ public final class DB {
        * <code>optional .D2SLoginResult loginResult = 2;</code>
        */
       public Builder setLoginResult(
-          D2SLoginResult.Builder builderForValue) {
+          game.protobuf.DB.D2SLoginResult.Builder builderForValue) {
         if (loginResultBuilder_ == null) {
           loginResult_ = builderForValue.build();
           onChanged();
@@ -1632,12 +1632,12 @@ public final class DB {
       /**
        * <code>optional .D2SLoginResult loginResult = 2;</code>
        */
-      public Builder mergeLoginResult(D2SLoginResult value) {
+      public Builder mergeLoginResult(game.protobuf.DB.D2SLoginResult value) {
         if (loginResultBuilder_ == null) {
           if (((bitField0_ & 0x00000002) == 0x00000002) &&
-              loginResult_ != D2SLoginResult.getDefaultInstance()) {
+              loginResult_ != game.protobuf.DB.D2SLoginResult.getDefaultInstance()) {
             loginResult_ =
-              D2SLoginResult.newBuilder(loginResult_).mergeFrom(value).buildPartial();
+              game.protobuf.DB.D2SLoginResult.newBuilder(loginResult_).mergeFrom(value).buildPartial();
           } else {
             loginResult_ = value;
           }
@@ -1653,7 +1653,7 @@ public final class DB {
        */
       public Builder clearLoginResult() {
         if (loginResultBuilder_ == null) {
-          loginResult_ = D2SLoginResult.getDefaultInstance();
+          loginResult_ = game.protobuf.DB.D2SLoginResult.getDefaultInstance();
           onChanged();
         } else {
           loginResultBuilder_.clear();
@@ -1664,7 +1664,7 @@ public final class DB {
       /**
        * <code>optional .D2SLoginResult loginResult = 2;</code>
        */
-      public D2SLoginResult.Builder getLoginResultBuilder() {
+      public game.protobuf.DB.D2SLoginResult.Builder getLoginResultBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getLoginResultFieldBuilder().getBuilder();
@@ -1672,7 +1672,7 @@ public final class DB {
       /**
        * <code>optional .D2SLoginResult loginResult = 2;</code>
        */
-      public D2SLoginResultOrBuilder getLoginResultOrBuilder() {
+      public game.protobuf.DB.D2SLoginResultOrBuilder getLoginResultOrBuilder() {
         if (loginResultBuilder_ != null) {
           return loginResultBuilder_.getMessageOrBuilder();
         } else {
@@ -1683,11 +1683,11 @@ public final class DB {
        * <code>optional .D2SLoginResult loginResult = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          D2SLoginResult, D2SLoginResult.Builder, D2SLoginResultOrBuilder>
+          game.protobuf.DB.D2SLoginResult, game.protobuf.DB.D2SLoginResult.Builder, game.protobuf.DB.D2SLoginResultOrBuilder> 
           getLoginResultFieldBuilder() {
         if (loginResultBuilder_ == null) {
           loginResultBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              D2SLoginResult, D2SLoginResult.Builder, D2SLoginResultOrBuilder>(
+              game.protobuf.DB.D2SLoginResult, game.protobuf.DB.D2SLoginResult.Builder, game.protobuf.DB.D2SLoginResultOrBuilder>(
                   getLoginResult(),
                   getParentForChildren(),
                   isClean());
@@ -1696,9 +1696,9 @@ public final class DB {
         return loginResultBuilder_;
       }
 
-      private DbPlayer register_ = DbPlayer.getDefaultInstance();
+      private game.protobuf.DB.DbPlayer register_ = game.protobuf.DB.DbPlayer.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          DbPlayer, DbPlayer.Builder, DbPlayerOrBuilder> registerBuilder_;
+          game.protobuf.DB.DbPlayer, game.protobuf.DB.DbPlayer.Builder, game.protobuf.DB.DbPlayerOrBuilder> registerBuilder_;
       /**
        * <code>optional .DbPlayer register = 3;</code>
        */
@@ -1708,7 +1708,7 @@ public final class DB {
       /**
        * <code>optional .DbPlayer register = 3;</code>
        */
-      public DbPlayer getRegister() {
+      public game.protobuf.DB.DbPlayer getRegister() {
         if (registerBuilder_ == null) {
           return register_;
         } else {
@@ -1718,7 +1718,7 @@ public final class DB {
       /**
        * <code>optional .DbPlayer register = 3;</code>
        */
-      public Builder setRegister(DbPlayer value) {
+      public Builder setRegister(game.protobuf.DB.DbPlayer value) {
         if (registerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1735,7 +1735,7 @@ public final class DB {
        * <code>optional .DbPlayer register = 3;</code>
        */
       public Builder setRegister(
-          DbPlayer.Builder builderForValue) {
+          game.protobuf.DB.DbPlayer.Builder builderForValue) {
         if (registerBuilder_ == null) {
           register_ = builderForValue.build();
           onChanged();
@@ -1748,12 +1748,12 @@ public final class DB {
       /**
        * <code>optional .DbPlayer register = 3;</code>
        */
-      public Builder mergeRegister(DbPlayer value) {
+      public Builder mergeRegister(game.protobuf.DB.DbPlayer value) {
         if (registerBuilder_ == null) {
           if (((bitField0_ & 0x00000004) == 0x00000004) &&
-              register_ != DbPlayer.getDefaultInstance()) {
+              register_ != game.protobuf.DB.DbPlayer.getDefaultInstance()) {
             register_ =
-              DbPlayer.newBuilder(register_).mergeFrom(value).buildPartial();
+              game.protobuf.DB.DbPlayer.newBuilder(register_).mergeFrom(value).buildPartial();
           } else {
             register_ = value;
           }
@@ -1769,7 +1769,7 @@ public final class DB {
        */
       public Builder clearRegister() {
         if (registerBuilder_ == null) {
-          register_ = DbPlayer.getDefaultInstance();
+          register_ = game.protobuf.DB.DbPlayer.getDefaultInstance();
           onChanged();
         } else {
           registerBuilder_.clear();
@@ -1780,7 +1780,7 @@ public final class DB {
       /**
        * <code>optional .DbPlayer register = 3;</code>
        */
-      public DbPlayer.Builder getRegisterBuilder() {
+      public game.protobuf.DB.DbPlayer.Builder getRegisterBuilder() {
         bitField0_ |= 0x00000004;
         onChanged();
         return getRegisterFieldBuilder().getBuilder();
@@ -1788,7 +1788,7 @@ public final class DB {
       /**
        * <code>optional .DbPlayer register = 3;</code>
        */
-      public DbPlayerOrBuilder getRegisterOrBuilder() {
+      public game.protobuf.DB.DbPlayerOrBuilder getRegisterOrBuilder() {
         if (registerBuilder_ != null) {
           return registerBuilder_.getMessageOrBuilder();
         } else {
@@ -1799,11 +1799,11 @@ public final class DB {
        * <code>optional .DbPlayer register = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          DbPlayer, DbPlayer.Builder, DbPlayerOrBuilder>
+          game.protobuf.DB.DbPlayer, game.protobuf.DB.DbPlayer.Builder, game.protobuf.DB.DbPlayerOrBuilder> 
           getRegisterFieldBuilder() {
         if (registerBuilder_ == null) {
           registerBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              DbPlayer, DbPlayer.Builder, DbPlayerOrBuilder>(
+              game.protobuf.DB.DbPlayer, game.protobuf.DB.DbPlayer.Builder, game.protobuf.DB.DbPlayerOrBuilder>(
                   getRegister(),
                   getParentForChildren(),
                   isClean());
@@ -1860,7 +1860,7 @@ public final class DB {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -1907,14 +1907,14 @@ public final class DB {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return DB.internal_static_S2DLogin_descriptor;
+      return game.protobuf.DB.internal_static_S2DLogin_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return DB.internal_static_S2DLogin_fieldAccessorTable
+      return game.protobuf.DB.internal_static_S2DLogin_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              S2DLogin.class, Builder.class);
+              game.protobuf.DB.S2DLogin.class, game.protobuf.DB.S2DLogin.Builder.class);
     }
 
     public static com.google.protobuf.Parser<S2DLogin> PARSER =
@@ -1927,7 +1927,7 @@ public final class DB {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<S2DLogin> getParserForType() {
       return PARSER;
     }
@@ -1990,59 +1990,59 @@ public final class DB {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static S2DLogin parseFrom(
+    public static game.protobuf.DB.S2DLogin parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static S2DLogin parseFrom(
+    public static game.protobuf.DB.S2DLogin parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static S2DLogin parseFrom(byte[] data)
+    public static game.protobuf.DB.S2DLogin parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static S2DLogin parseFrom(
+    public static game.protobuf.DB.S2DLogin parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static S2DLogin parseFrom(java.io.InputStream input)
+    public static game.protobuf.DB.S2DLogin parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static S2DLogin parseFrom(
+    public static game.protobuf.DB.S2DLogin parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static S2DLogin parseDelimitedFrom(java.io.InputStream input)
+    public static game.protobuf.DB.S2DLogin parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static S2DLogin parseDelimitedFrom(
+    public static game.protobuf.DB.S2DLogin parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static S2DLogin parseFrom(
+    public static game.protobuf.DB.S2DLogin parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static S2DLogin parseFrom(
+    public static game.protobuf.DB.S2DLogin parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2051,12 +2051,12 @@ public final class DB {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(S2DLogin prototype) {
+    public static Builder newBuilder(game.protobuf.DB.S2DLogin prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -2068,17 +2068,17 @@ public final class DB {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:S2DLogin)
-        S2DLoginOrBuilder {
+        game.protobuf.DB.S2DLoginOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return DB.internal_static_S2DLogin_descriptor;
+        return game.protobuf.DB.internal_static_S2DLogin_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return DB.internal_static_S2DLogin_fieldAccessorTable
+        return game.protobuf.DB.internal_static_S2DLogin_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                S2DLogin.class, Builder.class);
+                game.protobuf.DB.S2DLogin.class, game.protobuf.DB.S2DLogin.Builder.class);
       }
 
       // Construct using game.protobuf.DB.S2DLogin.newBuilder()
@@ -2112,23 +2112,23 @@ public final class DB {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return DB.internal_static_S2DLogin_descriptor;
+        return game.protobuf.DB.internal_static_S2DLogin_descriptor;
       }
 
-      public S2DLogin getDefaultInstanceForType() {
-        return S2DLogin.getDefaultInstance();
+      public game.protobuf.DB.S2DLogin getDefaultInstanceForType() {
+        return game.protobuf.DB.S2DLogin.getDefaultInstance();
       }
 
-      public S2DLogin build() {
-        S2DLogin result = buildPartial();
+      public game.protobuf.DB.S2DLogin build() {
+        game.protobuf.DB.S2DLogin result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public S2DLogin buildPartial() {
-        S2DLogin result = new S2DLogin(this);
+      public game.protobuf.DB.S2DLogin buildPartial() {
+        game.protobuf.DB.S2DLogin result = new game.protobuf.DB.S2DLogin(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -2141,16 +2141,16 @@ public final class DB {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof S2DLogin) {
-          return mergeFrom((S2DLogin)other);
+        if (other instanceof game.protobuf.DB.S2DLogin) {
+          return mergeFrom((game.protobuf.DB.S2DLogin)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(S2DLogin other) {
-        if (other == S2DLogin.getDefaultInstance()) return this;
+      public Builder mergeFrom(game.protobuf.DB.S2DLogin other) {
+        if (other == game.protobuf.DB.S2DLogin.getDefaultInstance()) return this;
         if (other.hasUserId()) {
           setUserId(other.getUserId());
         }
@@ -2170,11 +2170,11 @@ public final class DB {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        S2DLogin parsedMessage = null;
+        game.protobuf.DB.S2DLogin parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (S2DLogin) e.getUnfinishedMessage();
+          parsedMessage = (game.protobuf.DB.S2DLogin) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -2248,11 +2248,11 @@ public final class DB {
     /**
      * <code>optional .DbPlayer playerDb = 2;</code>
      */
-    DbPlayer getPlayerDb();
+    game.protobuf.DB.DbPlayer getPlayerDb();
     /**
      * <code>optional .DbPlayer playerDb = 2;</code>
      */
-    DbPlayerOrBuilder getPlayerDbOrBuilder();
+    game.protobuf.DB.DbPlayerOrBuilder getPlayerDbOrBuilder();
   }
   /**
    * Protobuf type {@code D2SLoginResult}
@@ -2278,7 +2278,7 @@ public final class DB {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -2312,11 +2312,11 @@ public final class DB {
               break;
             }
             case 18: {
-              DbPlayer.Builder subBuilder = null;
+              game.protobuf.DB.DbPlayer.Builder subBuilder = null;
               if (((bitField0_ & 0x00000002) == 0x00000002)) {
                 subBuilder = playerDb_.toBuilder();
               }
-              playerDb_ = input.readMessage(DbPlayer.PARSER, extensionRegistry);
+              playerDb_ = input.readMessage(game.protobuf.DB.DbPlayer.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(playerDb_);
                 playerDb_ = subBuilder.buildPartial();
@@ -2338,14 +2338,14 @@ public final class DB {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return DB.internal_static_D2SLoginResult_descriptor;
+      return game.protobuf.DB.internal_static_D2SLoginResult_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return DB.internal_static_D2SLoginResult_fieldAccessorTable
+      return game.protobuf.DB.internal_static_D2SLoginResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              D2SLoginResult.class, Builder.class);
+              game.protobuf.DB.D2SLoginResult.class, game.protobuf.DB.D2SLoginResult.Builder.class);
     }
 
     public static com.google.protobuf.Parser<D2SLoginResult> PARSER =
@@ -2358,7 +2358,7 @@ public final class DB {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<D2SLoginResult> getParserForType() {
       return PARSER;
     }
@@ -2380,7 +2380,7 @@ public final class DB {
     }
 
     public static final int PLAYERDB_FIELD_NUMBER = 2;
-    private DbPlayer playerDb_;
+    private game.protobuf.DB.DbPlayer playerDb_;
     /**
      * <code>optional .DbPlayer playerDb = 2;</code>
      */
@@ -2390,19 +2390,19 @@ public final class DB {
     /**
      * <code>optional .DbPlayer playerDb = 2;</code>
      */
-    public DbPlayer getPlayerDb() {
+    public game.protobuf.DB.DbPlayer getPlayerDb() {
       return playerDb_;
     }
     /**
      * <code>optional .DbPlayer playerDb = 2;</code>
      */
-    public DbPlayerOrBuilder getPlayerDbOrBuilder() {
+    public game.protobuf.DB.DbPlayerOrBuilder getPlayerDbOrBuilder() {
       return playerDb_;
     }
 
     private void initFields() {
       isHas_ = false;
-      playerDb_ = DbPlayer.getDefaultInstance();
+      playerDb_ = game.protobuf.DB.DbPlayer.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -2450,59 +2450,59 @@ public final class DB {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static D2SLoginResult parseFrom(
+    public static game.protobuf.DB.D2SLoginResult parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static D2SLoginResult parseFrom(
+    public static game.protobuf.DB.D2SLoginResult parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static D2SLoginResult parseFrom(byte[] data)
+    public static game.protobuf.DB.D2SLoginResult parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static D2SLoginResult parseFrom(
+    public static game.protobuf.DB.D2SLoginResult parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static D2SLoginResult parseFrom(java.io.InputStream input)
+    public static game.protobuf.DB.D2SLoginResult parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static D2SLoginResult parseFrom(
+    public static game.protobuf.DB.D2SLoginResult parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static D2SLoginResult parseDelimitedFrom(java.io.InputStream input)
+    public static game.protobuf.DB.D2SLoginResult parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static D2SLoginResult parseDelimitedFrom(
+    public static game.protobuf.DB.D2SLoginResult parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static D2SLoginResult parseFrom(
+    public static game.protobuf.DB.D2SLoginResult parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static D2SLoginResult parseFrom(
+    public static game.protobuf.DB.D2SLoginResult parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2511,12 +2511,12 @@ public final class DB {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(D2SLoginResult prototype) {
+    public static Builder newBuilder(game.protobuf.DB.D2SLoginResult prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -2528,17 +2528,17 @@ public final class DB {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:D2SLoginResult)
-        D2SLoginResultOrBuilder {
+        game.protobuf.DB.D2SLoginResultOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return DB.internal_static_D2SLoginResult_descriptor;
+        return game.protobuf.DB.internal_static_D2SLoginResult_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return DB.internal_static_D2SLoginResult_fieldAccessorTable
+        return game.protobuf.DB.internal_static_D2SLoginResult_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                D2SLoginResult.class, Builder.class);
+                game.protobuf.DB.D2SLoginResult.class, game.protobuf.DB.D2SLoginResult.Builder.class);
       }
 
       // Construct using game.protobuf.DB.D2SLoginResult.newBuilder()
@@ -2565,7 +2565,7 @@ public final class DB {
         isHas_ = false;
         bitField0_ = (bitField0_ & ~0x00000001);
         if (playerDbBuilder_ == null) {
-          playerDb_ = DbPlayer.getDefaultInstance();
+          playerDb_ = game.protobuf.DB.DbPlayer.getDefaultInstance();
         } else {
           playerDbBuilder_.clear();
         }
@@ -2579,23 +2579,23 @@ public final class DB {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return DB.internal_static_D2SLoginResult_descriptor;
+        return game.protobuf.DB.internal_static_D2SLoginResult_descriptor;
       }
 
-      public D2SLoginResult getDefaultInstanceForType() {
-        return D2SLoginResult.getDefaultInstance();
+      public game.protobuf.DB.D2SLoginResult getDefaultInstanceForType() {
+        return game.protobuf.DB.D2SLoginResult.getDefaultInstance();
       }
 
-      public D2SLoginResult build() {
-        D2SLoginResult result = buildPartial();
+      public game.protobuf.DB.D2SLoginResult build() {
+        game.protobuf.DB.D2SLoginResult result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public D2SLoginResult buildPartial() {
-        D2SLoginResult result = new D2SLoginResult(this);
+      public game.protobuf.DB.D2SLoginResult buildPartial() {
+        game.protobuf.DB.D2SLoginResult result = new game.protobuf.DB.D2SLoginResult(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -2616,16 +2616,16 @@ public final class DB {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof D2SLoginResult) {
-          return mergeFrom((D2SLoginResult)other);
+        if (other instanceof game.protobuf.DB.D2SLoginResult) {
+          return mergeFrom((game.protobuf.DB.D2SLoginResult)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(D2SLoginResult other) {
-        if (other == D2SLoginResult.getDefaultInstance()) return this;
+      public Builder mergeFrom(game.protobuf.DB.D2SLoginResult other) {
+        if (other == game.protobuf.DB.D2SLoginResult.getDefaultInstance()) return this;
         if (other.hasIsHas()) {
           setIsHas(other.getIsHas());
         }
@@ -2648,11 +2648,11 @@ public final class DB {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        D2SLoginResult parsedMessage = null;
+        game.protobuf.DB.D2SLoginResult parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (D2SLoginResult) e.getUnfinishedMessage();
+          parsedMessage = (game.protobuf.DB.D2SLoginResult) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -2695,9 +2695,9 @@ public final class DB {
         return this;
       }
 
-      private DbPlayer playerDb_ = DbPlayer.getDefaultInstance();
+      private game.protobuf.DB.DbPlayer playerDb_ = game.protobuf.DB.DbPlayer.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          DbPlayer, DbPlayer.Builder, DbPlayerOrBuilder> playerDbBuilder_;
+          game.protobuf.DB.DbPlayer, game.protobuf.DB.DbPlayer.Builder, game.protobuf.DB.DbPlayerOrBuilder> playerDbBuilder_;
       /**
        * <code>optional .DbPlayer playerDb = 2;</code>
        */
@@ -2707,7 +2707,7 @@ public final class DB {
       /**
        * <code>optional .DbPlayer playerDb = 2;</code>
        */
-      public DbPlayer getPlayerDb() {
+      public game.protobuf.DB.DbPlayer getPlayerDb() {
         if (playerDbBuilder_ == null) {
           return playerDb_;
         } else {
@@ -2717,7 +2717,7 @@ public final class DB {
       /**
        * <code>optional .DbPlayer playerDb = 2;</code>
        */
-      public Builder setPlayerDb(DbPlayer value) {
+      public Builder setPlayerDb(game.protobuf.DB.DbPlayer value) {
         if (playerDbBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2734,7 +2734,7 @@ public final class DB {
        * <code>optional .DbPlayer playerDb = 2;</code>
        */
       public Builder setPlayerDb(
-          DbPlayer.Builder builderForValue) {
+          game.protobuf.DB.DbPlayer.Builder builderForValue) {
         if (playerDbBuilder_ == null) {
           playerDb_ = builderForValue.build();
           onChanged();
@@ -2747,12 +2747,12 @@ public final class DB {
       /**
        * <code>optional .DbPlayer playerDb = 2;</code>
        */
-      public Builder mergePlayerDb(DbPlayer value) {
+      public Builder mergePlayerDb(game.protobuf.DB.DbPlayer value) {
         if (playerDbBuilder_ == null) {
           if (((bitField0_ & 0x00000002) == 0x00000002) &&
-              playerDb_ != DbPlayer.getDefaultInstance()) {
+              playerDb_ != game.protobuf.DB.DbPlayer.getDefaultInstance()) {
             playerDb_ =
-              DbPlayer.newBuilder(playerDb_).mergeFrom(value).buildPartial();
+              game.protobuf.DB.DbPlayer.newBuilder(playerDb_).mergeFrom(value).buildPartial();
           } else {
             playerDb_ = value;
           }
@@ -2768,7 +2768,7 @@ public final class DB {
        */
       public Builder clearPlayerDb() {
         if (playerDbBuilder_ == null) {
-          playerDb_ = DbPlayer.getDefaultInstance();
+          playerDb_ = game.protobuf.DB.DbPlayer.getDefaultInstance();
           onChanged();
         } else {
           playerDbBuilder_.clear();
@@ -2779,7 +2779,7 @@ public final class DB {
       /**
        * <code>optional .DbPlayer playerDb = 2;</code>
        */
-      public DbPlayer.Builder getPlayerDbBuilder() {
+      public game.protobuf.DB.DbPlayer.Builder getPlayerDbBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getPlayerDbFieldBuilder().getBuilder();
@@ -2787,7 +2787,7 @@ public final class DB {
       /**
        * <code>optional .DbPlayer playerDb = 2;</code>
        */
-      public DbPlayerOrBuilder getPlayerDbOrBuilder() {
+      public game.protobuf.DB.DbPlayerOrBuilder getPlayerDbOrBuilder() {
         if (playerDbBuilder_ != null) {
           return playerDbBuilder_.getMessageOrBuilder();
         } else {
@@ -2798,11 +2798,11 @@ public final class DB {
        * <code>optional .DbPlayer playerDb = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          DbPlayer, DbPlayer.Builder, DbPlayerOrBuilder>
+          game.protobuf.DB.DbPlayer, game.protobuf.DB.DbPlayer.Builder, game.protobuf.DB.DbPlayerOrBuilder> 
           getPlayerDbFieldBuilder() {
         if (playerDbBuilder_ == null) {
           playerDbBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              DbPlayer, DbPlayer.Builder, DbPlayerOrBuilder>(
+              game.protobuf.DB.DbPlayer, game.protobuf.DB.DbPlayer.Builder, game.protobuf.DB.DbPlayerOrBuilder>(
                   getPlayerDb(),
                   getParentForChildren(),
                   isClean());
@@ -2850,7 +2850,7 @@ public final class DB {
     /**
      * <code>optional string name = 3;</code>
      */
-    String getName();
+    java.lang.String getName();
     /**
      * <code>optional string name = 3;</code>
      */
@@ -2897,7 +2897,7 @@ public final class DB {
      * <pre>
      * </pre>
      */
-    String getEquip();
+    java.lang.String getEquip();
     /**
      * <code>optional string equip = 100;</code>
      *
@@ -2914,7 +2914,7 @@ public final class DB {
     /**
      * <code>optional string pet = 101;</code>
      */
-    String getPet();
+    java.lang.String getPet();
     /**
      * <code>optional string pet = 101;</code>
      */
@@ -2928,7 +2928,7 @@ public final class DB {
     /**
      * <code>optional string bag = 102;</code>
      */
-    String getBag();
+    java.lang.String getBag();
     /**
      * <code>optional string bag = 102;</code>
      */
@@ -2959,7 +2959,7 @@ public final class DB {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -3045,14 +3045,14 @@ public final class DB {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return DB.internal_static_DbPlayer_descriptor;
+      return game.protobuf.DB.internal_static_DbPlayer_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return DB.internal_static_DbPlayer_fieldAccessorTable
+      return game.protobuf.DB.internal_static_DbPlayer_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              DbPlayer.class, Builder.class);
+              game.protobuf.DB.DbPlayer.class, game.protobuf.DB.DbPlayer.Builder.class);
     }
 
     public static com.google.protobuf.Parser<DbPlayer> PARSER =
@@ -3065,7 +3065,7 @@ public final class DB {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<DbPlayer> getParserForType() {
       return PARSER;
     }
@@ -3095,7 +3095,7 @@ public final class DB {
     }
 
     public static final int NAME_FIELD_NUMBER = 3;
-    private Object name_;
+    private java.lang.Object name_;
     /**
      * <code>optional string name = 3;</code>
      */
@@ -3105,14 +3105,14 @@ public final class DB {
     /**
      * <code>optional string name = 3;</code>
      */
-    public String getName() {
-      Object ref = name_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           name_ = s;
         }
@@ -3124,11 +3124,11 @@ public final class DB {
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
-      Object ref = name_;
-      if (ref instanceof String) {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         name_ = b;
         return b;
       } else {
@@ -3182,7 +3182,7 @@ public final class DB {
     }
 
     public static final int EQUIP_FIELD_NUMBER = 100;
-    private Object equip_;
+    private java.lang.Object equip_;
     /**
      * <code>optional string equip = 100;</code>
      *
@@ -3198,14 +3198,14 @@ public final class DB {
      * <pre>
      * </pre>
      */
-    public String getEquip() {
-      Object ref = equip_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getEquip() {
+      java.lang.Object ref = equip_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           equip_ = s;
         }
@@ -3220,11 +3220,11 @@ public final class DB {
      */
     public com.google.protobuf.ByteString
         getEquipBytes() {
-      Object ref = equip_;
-      if (ref instanceof String) {
+      java.lang.Object ref = equip_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         equip_ = b;
         return b;
       } else {
@@ -3233,7 +3233,7 @@ public final class DB {
     }
 
     public static final int PET_FIELD_NUMBER = 101;
-    private Object pet_;
+    private java.lang.Object pet_;
     /**
      * <code>optional string pet = 101;</code>
      */
@@ -3243,14 +3243,14 @@ public final class DB {
     /**
      * <code>optional string pet = 101;</code>
      */
-    public String getPet() {
-      Object ref = pet_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getPet() {
+      java.lang.Object ref = pet_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           pet_ = s;
         }
@@ -3262,11 +3262,11 @@ public final class DB {
      */
     public com.google.protobuf.ByteString
         getPetBytes() {
-      Object ref = pet_;
-      if (ref instanceof String) {
+      java.lang.Object ref = pet_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         pet_ = b;
         return b;
       } else {
@@ -3275,7 +3275,7 @@ public final class DB {
     }
 
     public static final int BAG_FIELD_NUMBER = 102;
-    private Object bag_;
+    private java.lang.Object bag_;
     /**
      * <code>optional string bag = 102;</code>
      */
@@ -3285,14 +3285,14 @@ public final class DB {
     /**
      * <code>optional string bag = 102;</code>
      */
-    public String getBag() {
-      Object ref = bag_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getBag() {
+      java.lang.Object ref = bag_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           bag_ = s;
         }
@@ -3304,11 +3304,11 @@ public final class DB {
      */
     public com.google.protobuf.ByteString
         getBagBytes() {
-      Object ref = bag_;
-      if (ref instanceof String) {
+      java.lang.Object ref = bag_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         bag_ = b;
         return b;
       } else {
@@ -3410,59 +3410,59 @@ public final class DB {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static DbPlayer parseFrom(
+    public static game.protobuf.DB.DbPlayer parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static DbPlayer parseFrom(
+    public static game.protobuf.DB.DbPlayer parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static DbPlayer parseFrom(byte[] data)
+    public static game.protobuf.DB.DbPlayer parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static DbPlayer parseFrom(
+    public static game.protobuf.DB.DbPlayer parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static DbPlayer parseFrom(java.io.InputStream input)
+    public static game.protobuf.DB.DbPlayer parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static DbPlayer parseFrom(
+    public static game.protobuf.DB.DbPlayer parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static DbPlayer parseDelimitedFrom(java.io.InputStream input)
+    public static game.protobuf.DB.DbPlayer parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static DbPlayer parseDelimitedFrom(
+    public static game.protobuf.DB.DbPlayer parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static DbPlayer parseFrom(
+    public static game.protobuf.DB.DbPlayer parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static DbPlayer parseFrom(
+    public static game.protobuf.DB.DbPlayer parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3471,12 +3471,12 @@ public final class DB {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(DbPlayer prototype) {
+    public static Builder newBuilder(game.protobuf.DB.DbPlayer prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -3488,17 +3488,17 @@ public final class DB {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:DbPlayer)
-        DbPlayerOrBuilder {
+        game.protobuf.DB.DbPlayerOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return DB.internal_static_DbPlayer_descriptor;
+        return game.protobuf.DB.internal_static_DbPlayer_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return DB.internal_static_DbPlayer_fieldAccessorTable
+        return game.protobuf.DB.internal_static_DbPlayer_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                DbPlayer.class, Builder.class);
+                game.protobuf.DB.DbPlayer.class, game.protobuf.DB.DbPlayer.Builder.class);
       }
 
       // Construct using game.protobuf.DB.DbPlayer.newBuilder()
@@ -3546,23 +3546,23 @@ public final class DB {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return DB.internal_static_DbPlayer_descriptor;
+        return game.protobuf.DB.internal_static_DbPlayer_descriptor;
       }
 
-      public DbPlayer getDefaultInstanceForType() {
-        return DbPlayer.getDefaultInstance();
+      public game.protobuf.DB.DbPlayer getDefaultInstanceForType() {
+        return game.protobuf.DB.DbPlayer.getDefaultInstance();
       }
 
-      public DbPlayer build() {
-        DbPlayer result = buildPartial();
+      public game.protobuf.DB.DbPlayer build() {
+        game.protobuf.DB.DbPlayer result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public DbPlayer buildPartial() {
-        DbPlayer result = new DbPlayer(this);
+      public game.protobuf.DB.DbPlayer buildPartial() {
+        game.protobuf.DB.DbPlayer result = new game.protobuf.DB.DbPlayer(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -3603,16 +3603,16 @@ public final class DB {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof DbPlayer) {
-          return mergeFrom((DbPlayer)other);
+        if (other instanceof game.protobuf.DB.DbPlayer) {
+          return mergeFrom((game.protobuf.DB.DbPlayer)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(DbPlayer other) {
-        if (other == DbPlayer.getDefaultInstance()) return this;
+      public Builder mergeFrom(game.protobuf.DB.DbPlayer other) {
+        if (other == game.protobuf.DB.DbPlayer.getDefaultInstance()) return this;
         if (other.hasUserId()) {
           setUserId(other.getUserId());
         }
@@ -3657,11 +3657,11 @@ public final class DB {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        DbPlayer parsedMessage = null;
+        game.protobuf.DB.DbPlayer parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (DbPlayer) e.getUnfinishedMessage();
+          parsedMessage = (game.protobuf.DB.DbPlayer) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -3720,7 +3720,7 @@ public final class DB {
         return this;
       }
 
-      private Object name_ = "";
+      private java.lang.Object name_ = "";
       /**
        * <code>optional string name = 3;</code>
        */
@@ -3730,18 +3730,18 @@ public final class DB {
       /**
        * <code>optional string name = 3;</code>
        */
-      public String getName() {
-        Object ref = name_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             name_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -3749,11 +3749,11 @@ public final class DB {
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
-        Object ref = name_;
+        java.lang.Object ref = name_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           name_ = b;
           return b;
         } else {
@@ -3764,7 +3764,7 @@ public final class DB {
        * <code>optional string name = 3;</code>
        */
       public Builder setName(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -3892,7 +3892,7 @@ public final class DB {
         return this;
       }
 
-      private Object equip_ = "";
+      private java.lang.Object equip_ = "";
       /**
        * <code>optional string equip = 100;</code>
        *
@@ -3908,18 +3908,18 @@ public final class DB {
        * <pre>
        * </pre>
        */
-      public String getEquip() {
-        Object ref = equip_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getEquip() {
+        java.lang.Object ref = equip_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             equip_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -3930,11 +3930,11 @@ public final class DB {
        */
       public com.google.protobuf.ByteString
           getEquipBytes() {
-        Object ref = equip_;
+        java.lang.Object ref = equip_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           equip_ = b;
           return b;
         } else {
@@ -3948,7 +3948,7 @@ public final class DB {
        * </pre>
        */
       public Builder setEquip(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -3986,7 +3986,7 @@ public final class DB {
         return this;
       }
 
-      private Object pet_ = "";
+      private java.lang.Object pet_ = "";
       /**
        * <code>optional string pet = 101;</code>
        */
@@ -3996,18 +3996,18 @@ public final class DB {
       /**
        * <code>optional string pet = 101;</code>
        */
-      public String getPet() {
-        Object ref = pet_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getPet() {
+        java.lang.Object ref = pet_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             pet_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -4015,11 +4015,11 @@ public final class DB {
        */
       public com.google.protobuf.ByteString
           getPetBytes() {
-        Object ref = pet_;
+        java.lang.Object ref = pet_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           pet_ = b;
           return b;
         } else {
@@ -4030,7 +4030,7 @@ public final class DB {
        * <code>optional string pet = 101;</code>
        */
       public Builder setPet(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4062,7 +4062,7 @@ public final class DB {
         return this;
       }
 
-      private Object bag_ = "";
+      private java.lang.Object bag_ = "";
       /**
        * <code>optional string bag = 102;</code>
        */
@@ -4072,18 +4072,18 @@ public final class DB {
       /**
        * <code>optional string bag = 102;</code>
        */
-      public String getBag() {
-        Object ref = bag_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getBag() {
+        java.lang.Object ref = bag_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             bag_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -4091,11 +4091,11 @@ public final class DB {
        */
       public com.google.protobuf.ByteString
           getBagBytes() {
-        Object ref = bag_;
+        java.lang.Object ref = bag_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           bag_ = b;
           return b;
         } else {
@@ -4106,7 +4106,7 @@ public final class DB {
        * <code>optional string bag = 102;</code>
        */
       public Builder setBag(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4182,7 +4182,7 @@ public final class DB {
   private static com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\017messageDb.proto\032\rmessage.proto\"\206\001\n\nS2D" +
       "Message\022\035\n\tmessageId\030\001 \002(\0162\n.MessageId\022\033" +
       "\n\010s2dLogin\030\002 \001(\0132\t.S2DLogin\022\033\n\010register\030" +
@@ -4216,31 +4216,31 @@ public final class DB {
     internal_static_S2DMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_S2DMessage_descriptor,
-        new String[] { "MessageId", "S2DLogin", "Register", "UpdatePlayer", });
+        new java.lang.String[] { "MessageId", "S2DLogin", "Register", "UpdatePlayer", });
     internal_static_D2SMessage_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_D2SMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_D2SMessage_descriptor,
-        new String[] { "MessageId", "LoginResult", "Register", });
+        new java.lang.String[] { "MessageId", "LoginResult", "Register", });
     internal_static_S2DLogin_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_S2DLogin_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_S2DLogin_descriptor,
-        new String[] { "UserId", });
+        new java.lang.String[] { "UserId", });
     internal_static_D2SLoginResult_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_D2SLoginResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_D2SLoginResult_descriptor,
-        new String[] { "IsHas", "PlayerDb", });
+        new java.lang.String[] { "IsHas", "PlayerDb", });
     internal_static_DbPlayer_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_DbPlayer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_DbPlayer_descriptor,
-        new String[] { "UserId", "Name", "Gold", "Diamond", "Level", "Equip", "Pet", "Bag", });
+        new java.lang.String[] { "UserId", "Name", "Gold", "Diamond", "Level", "Equip", "Pet", "Bag", });
     game.protobuf.PB.getDescriptor();
   }
 
